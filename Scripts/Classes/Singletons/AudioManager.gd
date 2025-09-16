@@ -8,6 +8,7 @@ const DEFAULT_SFX_LIBRARY := {
 	"pipe": ("res://Assets/Audio/SFX/Pipe.wav"),
 	"damage": ("res://Assets/Audio/SFX/Damage.wav"),
 	"power_up": ("res://Assets/Audio/SFX/Powerup.wav"),
+	"power_up_suit": ("res://Assets/Audio/SFX/PowerupSuit.wav"),
 	"item_appear": ("res://Assets/Audio/SFX/ItemAppear.wav"),
 	"block_break": ("res://Assets/Audio/SFX/BreakBlock.wav"),
 	"enemy_stomp": ("res://Assets/Audio/SFX/Stomp.wav"),
@@ -54,7 +55,9 @@ const DEFAULT_SFX_LIBRARY := {
 	"bumper": "res://Assets/Audio/SFX/Bumper.wav",
 	"bumper_high": "res://Assets/Audio/SFX/BumperHigh.wav",
 	"door_unlock": "res://Assets/Audio/SFX/DoorUnlock.wav",
-	"door_locked": "res://Assets/Audio/SFX/DoorLocked.wav"
+	"door_locked": "res://Assets/Audio/SFX/DoorLocked.wav",
+	"swing_tail": "res://Assets/Audio/SFX/SwingTail.wav",
+	"pmeter": "res://Assets/Audio/SFX/PMeter.wav"
 }
 
 @onready var sfx_library = DEFAULT_SFX_LIBRARY.duplicate()

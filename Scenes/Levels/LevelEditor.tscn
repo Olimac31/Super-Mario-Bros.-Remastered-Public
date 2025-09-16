@@ -1,4 +1,4 @@
-[gd_scene load_steps=295 format=3 uid="uid://gbcmqonky63j"]
+[gd_scene load_steps=297 format=3 uid="uid://gbcmqonky63j"]
 
 [ext_resource type="Script" uid="uid://c2lnc7vnq3xth" path="res://Scripts/Classes/Editor/LevelEditor.gd" id="1_0qbyu"]
 [ext_resource type="PackedScene" uid="uid://bksxgpygrdjl7" path="res://Scenes/Prefabs/LevelBG.tscn" id="1_ujeu4"]
@@ -247,6 +247,8 @@
 [ext_resource type="PackedScene" uid="uid://dhd0gp2xvl53l" path="res://Scenes/Prefabs/Entities/Items/LuckyStar.tscn" id="214_uk8sr"]
 [ext_resource type="JSON" path="res://Assets/Sprites/Items/WingItem.json" id="221_o0k3u"]
 [ext_resource type="JSON" path="res://Assets/Sprites/Items/LuckyStar.json" id="224_vjdbd"]
+[ext_resource type="JSON" path="res://Assets/Sprites/Items/TanookiLeaf.json" id="224_y4bqs"]
+[ext_resource type="PackedScene" uid="uid://b35gkxk1a1yrj" path="res://Scenes/Prefabs/Entities/Items/Leaf.tscn" id="225_kxvns"]
 [ext_resource type="JSON" path="res://Assets/Sprites/Items/Key.json" id="229_u1728"]
 [ext_resource type="PackedScene" uid="uid://ny5glffi0suh" path="res://Scenes/Prefabs/Entities/Items/KeyItem.tscn" id="230_gk37f"]
 [ext_resource type="Script" uid="uid://codql1f5eca56" path="res://Scripts/Classes/Editor/OptionButtonThatIsntFuckingBlurry.gd" id="241_8au2b"]
@@ -4455,6 +4457,17 @@ type = 1
 icon_texture = ExtResource("62_8a610")
 icon_region_override = Rect2(0, 0, 16, 16)
 entity_scene = ExtResource("63_8a610")
+metadata/can_be_stored = true
+metadata/can_note_store = false
+metadata/cannon_ammo = false
+metadata/can_lakitu_throw = false
+
+[node name="Leaf" parent="TileMenu/MarginContainer/VBoxContainer/PanelContainer/TILES/ScrollContainer/VBoxContainer/Items/MarginContainer/GridContainer" groups=["Selectors"] instance=ExtResource("8_wkmjk")]
+layout_mode = 2
+tile_name = "ITEM_LEAF"
+type = 1
+icon_texture = ExtResource("224_y4bqs")
+entity_scene = ExtResource("225_kxvns")
 metadata/can_be_stored = true
 metadata/can_note_store = false
 metadata/cannon_ammo = false

@@ -88,7 +88,7 @@ var can_uncrouch := false
 var can_air_turn := false
 
 static var CHARACTERS := ["Mario", "Luigi", "Toad", "Toadette"]
-const POWER_STATES := ["Small", "Big", "Fire"]
+const POWER_STATES := ["Small", "Big", "Fire", "Leaf"]
 
 signal moved
 signal dead
@@ -578,7 +578,11 @@ func get_power_up(power_name := "") -> void:
 	Global.score += 1000
 	DiscoLevel.combo_amount += 1
 	score_note_spawner.spawn_note(1000)
-	AudioManager.play_sfx("power_up", global_position)
+	match(power_name):
+		"Leaf":
+			AudioManager.play_sfx("power_up_suit", global_position)
+		_:
+			AudioManager.play_sfx("power_up", global_position)
 	if Settings.file.difficulty.damage_style == 0 and power_state.state_name != power_name:
 		if power_name != "Big" and power_state.state_name != "Big":
 			power_name = "Big"

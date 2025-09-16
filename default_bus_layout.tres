@@ -5,7 +5,7 @@ resource_name = "Filter"
 cutoff_hz = 250.0
 
 [resource]
-bus/0/volume_db = -4.2500257
+bus/0/volume_db = -4.25003
 bus/1/name = &"Music"
 bus/1/solo = false
 bus/1/mute = false
